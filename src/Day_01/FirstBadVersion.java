@@ -15,11 +15,11 @@ public class FirstBadVersion
 {
     public int firstBadVersion(int n)
     {
-        int low = 0, high = n - 1, target = n;
+        int low = 0, mid, high = n - 1, target = n;
 
         while (low <= high)
         {
-            int mid = low + (high - low) / 2;
+            mid = (low + high) / 2;
 
             // if mid value is bad then neglect the right half
             // update high

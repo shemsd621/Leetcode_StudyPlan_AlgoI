@@ -12,11 +12,11 @@ public class SearchInsertPosition
 {
     public int searchInsert(int[] nums, int target)
     {
-        int low = 0, high = nums.length - 1;
+        int low = 0, mid, high = nums.length - 1;
 
         while (low <= high)
         {
-            int mid = (low + high) / 2;
+            mid = (low + high) / 2;
 
             // checks whether mid element is the same as the target
             if(nums[mid] == target)
